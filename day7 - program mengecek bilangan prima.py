@@ -8,7 +8,7 @@ pembagi = 2
 #apabila sisa bagi dari x % pembagi nilainya bukan nol
 while x % pembagi != 0 :
     pembagi = pembagi + 1
-    #pembagi bertambah satu hingga bernilai bilangan yang diinputkan sebelumnya
+    #pembagi bertambah satu hingga x % pembagi = 0
 
 if pembagi == x :
     print(x, "adalah bilangan prima")
