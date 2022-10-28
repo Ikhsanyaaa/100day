@@ -27,7 +27,7 @@ def segitiga():
 def lingkaran():
     diameter = int(input("masukkan panjang diameter lingkaran dalam cm : "))
     jari2 = diameter / 2
-    phi =  22/7
+    phi =  22/7 
     luas = phi * (jari2 ** 2)
     keliling = phi * diameter
     print("luas lingkaran adalah : ",luas,"cm")
@@ -37,15 +37,17 @@ print('''1. persegi
 2. persegi panjang
 3. segitiga 
 4. lingkaran''')
+def menu():
+    objek = int(input("masukkan angka bangun datar yang ingin dicari : "))
+    if objek == 1 : 
+        persegi()
+    elif objek == 2 : 
+        persegi_panjang()
+    elif objek == 3 : 
+        segitiga()
+    elif objek == 4 :
+        lingkaran()
+    else :
+        print("masukkan pilihan dengan benar!")
 
-objek = int(input("masukkan angka bangun datar yang ingin dicari : "))
-if objek == 1 : 
-    persegi()
-elif objek == 2 : 
-    persegi_panjang()
-elif objek == 3 : 
-    segitiga()
-elif objek == 4 :
-    lingkaran()
-else :
-    print("masukkan pilihan dengan benar!")
+menu()
