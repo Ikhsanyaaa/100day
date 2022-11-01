@@ -51,9 +51,14 @@ def penarikan():
 
 def ganti_pin():
     masukan_pin()
-    buat_akun.a = int(input("masukkan pin baru : "))
-    print("pin berhasil diganti!")
-    ulang()
+    while True :
+        pin_baru = int(input("masukkan pin baru : "))
+        if len(str(pin_baru)) != 6 :
+                print("masukkan pin sebanyak 6 digit!")
+        else : 
+            buat_akun.a = pin_baru
+            print("pin berhasil diganti!")
+            ulang()
     
 
 def cek():
@@ -65,10 +70,11 @@ def menu():
     while True : 
         print("selamat datang di ATM",username,)
         pilihan_menu = int(input('''1.setoran
-    2. penarikan
-    3. cek
-    4. ganti pin
-        pilih menu diatas : '''))
+2. penarikan
+3. cek
+4. ganti pin
+5. keluar
+pilih menu diatas : '''))
         if pilihan_menu == 1 : 
             setoran()
         elif pilihan_menu == 2 :
@@ -77,6 +83,9 @@ def menu():
             cek()
         elif pilihan_menu == 4 : 
             ganti_pin()
+        elif pilihan_menu == 5 : 
+            print("terimakasih",username," telah menggunakan layanan kami")
+            break
         else :
             print("masukkan pilihan dengan benar!")
             
