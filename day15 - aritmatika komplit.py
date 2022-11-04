@@ -41,7 +41,6 @@ def ganjil():
     akhir = int(input("masukkan bilaangan akhir"))
     batas = akhir + 1
     for i in range(awal, batas) :
-        if i % 2 != 0 :
             print(i)
             ulang()
 

@@ -48,6 +48,7 @@ def penarikan():
     else : 
         saldo = saldo - tarik
         print("penarikan berhasil, sisa saldo anda adalah : ",saldo)
+        ulang()
 
 def ganti_pin():
     masukan_pin()
