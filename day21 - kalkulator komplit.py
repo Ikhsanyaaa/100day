@@ -1,4 +1,3 @@
-#membuat kalkulator yang akan terus berlanjut
 #dan hasilnya masih bisa di operasikan kembali
 
 def lagi():
