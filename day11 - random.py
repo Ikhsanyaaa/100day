@@ -3,41 +3,41 @@ import random
 pilihan = ["batu", "gunting", "kertas"]
 bot = pilihan[random.randint(0,2)]
 def batu():
-    if bot == "batu" :
+    if bot == pilihan[0] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("seri")
-    elif bot == "gunting" :
+    elif bot == pilihan[1] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("anda menang")
-    else : 
+    elif bot == pilihan[2] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("anda kalah")
 def gunting():
-    if bot == "batu" :
+    if bot == pilihan[0] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("anda kalah")
-    elif bot == "gunting" :
+    elif bot == pilihan[1] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("seri")
-    else : 
+    elif bot == pilihan[2] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("anda menang")
 def kertas():
-    if bot == "batu" :
+    if bot == pilihan[0] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("anda menang")
-    elif bot == "gunting" :
+    elif bot == pilihan[1] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("anda kalah")
-    else : 
+    elif bot == pilihan[2] :
         print("anda memilih :",player)
         print("lawan memilih : ",bot)
         print("seri")
