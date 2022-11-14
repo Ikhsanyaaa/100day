@@ -1,7 +1,7 @@
 import pyautogui
 import time
 
-pesan = "spam"
+pesan = "login"
 n = 20
 
 time.sleep(2)
