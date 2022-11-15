@@ -1,7 +1,7 @@
 import pyautogui
 import time
 
-pesan = "login"
+pesan = "andre"
 n = 20
 
 time.sleep(2)
