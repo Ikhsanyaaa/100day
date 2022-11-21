@@ -1,0 +1,23 @@
+import tkinter
+from tkinter import *
+
+window = tkinter.Tk()
+window.title("kalkulator")
+window.geometry("400x300")
+
+def penjumlahan():
+    entry_angka2 = Entry(window, width=15).place(x=145, y=90)
+    
+    angka2 = int(entry_angka2.get())
+    hasil = angka1 + angka2
+    label_hasil = Label(window, text=hasil).place(x=145, y = 120)
+
+label_judul = Label(window, text="kalkulator", bg="black", fg="white").place(x=165, y=0)
+entry_angka1 = Entry(window, width=15).place(x=145, y= 30)
+angka1 = int(entry_angka1.get())
+tambah = Button(window, text="  +  ", command=penjumlahan).place(x=110, y = 60)
+kurang = Button(window, text="  -  ").place(x=150, y = 60)
+kali = Button(window, text="  x  ").place(x=190, y = 60)
+bagi = Button(window, text="  /  ").place(x=230, y = 60)
+
+window.mainloop()

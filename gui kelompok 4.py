@@ -2,15 +2,17 @@
 import tkinter
 from tkinter import *
 from tkinter import messagebox
-
-
+from tkinter import Listbox
 window = tkinter.Tk()  #membuat tampilan window
 window.title("belajar tkinter")  #menentukan judul dari window
 window.geometry("500x400")  #menentukan ukuran window
 
 
-def terklik(): #membuat fungsi dimana aksinya adalah menampilkan pesan
+def submitt(): #membuat fungsi dimana aksinya adalah menampilkan pesan
     messagebox.showinfo("selesai","data anda sudah direkam")
+
+def keluar(): #membuat fungsi dimana aksinya adalah menampilkan pesan
+    messagebox.askokcancel("exit", "yakin anda ingin keluar?")
 
 label_bio = Label(window, text= "memasukkan biodata", bg= "black", fg= "white").place(x= 200, y = 10) #membuat judul dengan label
 label_nama = Label(window, text="nama").place(x= 10, y = 40) #membuat tulisan nama dengan label
@@ -27,7 +29,15 @@ sipil = Radiobutton(window, text ="teknik sipil", value = 3).place(x= 300, y = 8
 kipk = Checkbutton(window, text="penerima kip?").place(x=10, y = 100) # membuat pilihan centang dengan checkbox
 label_nilai = Label(window, text="masukkan nilai anda dalam skala 1-10 ").place(x=10,y=120) #membuat tulisan keterangan dengan label
 nilai = Spinbox(window,from_=0, to=10).place(x=225, y=120) #membuat spinbox nilai
-submit = Button(window, text="kirim", command=terklik).place(x=10, y=140) #membuat tombol/button kirim
+submit = Button(window, text="kirim", command=submitt).place(x=10, y=320) #membuat tombol/button kirim
+keluar = Button(window, text="keluar", command=keluar).place(x=50, y=320)
+listbox = Listbox(window)
+listbox.insert(1, "kelompok 1")
+listbox.insert(2, "kelompok 2")
+listbox.insert(3, "kelompok 3")
+listbox.insert(4, "kelompok 4")
+listbox.insert(5, "kelompok 5")
+listbox.place(x=10, y=140)
 scale = Scale(length=400, from_=  0, to=100).place(x= 450) #membuat scale yang ada di sebelah kanan window
 
 window.mainloop() #berfungsi sebagai pengulang agar window berjalan terus menerus
