@@ -14,7 +14,7 @@ def ganti():
     a = 0
     digit = int(entry_digit.get())
     while a < digit : 
-        angka = random.randint(1,9)
+        angka = random.randint(0,9)
         PIN.append(angka)
         a += 1
     label_teks = Label(window, text="pin anda : ")
@@ -27,11 +27,11 @@ def ganti():
 def buat_pin2():
     global PIN
     while len(PIN) > 0 :
-        PIN.pop()
+        PIN.pop()   
     a = 0
     digit = int(entry_digit.get())
     while a < digit : 
-        angka = random.randint(1,9)
+        angka = random.randint(0,9)
         PIN.append(angka)
         a += 1
     label_teks = Label(window, text="pin anda : ")
