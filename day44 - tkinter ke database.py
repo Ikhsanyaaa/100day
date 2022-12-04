@@ -3,6 +3,8 @@
 import tkinter
 from tkinter import *
 import MySQLdb
+import mysql.connector
+
 
 window = tkinter.Tk()
 window.title("database")

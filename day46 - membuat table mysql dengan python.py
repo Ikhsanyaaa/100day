@@ -14,7 +14,7 @@ nim = input("masukkan nim anda : ")
 nama = input("masukkan nama anda : ")
 umur = input("masukkan umur anda : ")
 cursor.execute(f'''insert into mhs 
-values 
+values
 ("{nim}","{nama}",{umur})''')
 db.commit()
 print("data berhasil ditambahkan ke dalam database")
