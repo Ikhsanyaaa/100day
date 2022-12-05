@@ -20,7 +20,7 @@ values
 ("{nim}","{nama}",{umur})''')
     db.commit()
     selesai_label = Label(window, text="data anda telah dimasukkan ke dalam database")
-    selesai_label.place(x= 10, y = 30)
+    selesai_label.place(x= 10, y = 130)
 
 nim_label = Label(window, text="nim")
 nim_label.place(x=10,y=10)

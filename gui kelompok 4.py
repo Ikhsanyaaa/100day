@@ -2,7 +2,7 @@
 import tkinter
 from tkinter import *
 from tkinter import messagebox
-from tkinter import Listbox
+from tkinter import ttk
 window = tkinter.Tk()  #membuat tampilan window
 window.title("belajar tkinter")  #menentukan judul dari window
 window.geometry("500x400")  #menentukan ukuran window
