@@ -40,6 +40,7 @@ def mengisi_field():
             cursor.execute(f'''update {table} set {field_cari} = '{data}' ''')
             db.commit()
             print("data berhasil ditambahkan ke dalam database")
+            menu()
 
 def menu():
     pilih = str(input('''1.mengecek koneksi
@@ -57,3 +58,5 @@ def menu():
         menambah_field()
     elif pilih == 5 : 
         mengisi_field()
+
+menu()

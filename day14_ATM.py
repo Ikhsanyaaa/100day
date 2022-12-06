@@ -69,7 +69,7 @@ def cek():
 
 def menu():
     while True : 
-        print("selamat datang di ATM",username,)
+        print("selamat datang di ATM,",username,)
         pilihan_menu = int(input('''1.setoran
 2. penarikan
 3. cek
