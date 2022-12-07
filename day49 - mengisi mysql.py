@@ -21,5 +21,4 @@ masukkan tipe data record : '''))
         collumn -= 1
 for i in data : 
     cursor.execute(f'''insert into {table}
-values
 ({i})''')
