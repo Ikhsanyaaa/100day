@@ -9,7 +9,7 @@ for i in range(3) :
 print("hasil dari u . v = ",uv)
 #menentukan ortogonalitas
 skalar = sum(uv)
-print("u . v = ",skalar)
+print(f"{uv[0]} + {uv[1]} + {uv[2]} = {skalar}")
 if skalar == 0 : 
     print("vektor adalah ortogonal")
 else : 
