@@ -14,3 +14,4 @@ if skalar == 0 :
     print("vektor adalah ortogonal")
 else : 
     print("tidak ortogonal")
+    
