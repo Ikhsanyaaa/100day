@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        Scanner masukan = new Scanner(System.in);
     }
 
     public void persegi() {
         System.out.println("masukkan panjang sisi : ");
-        int sisi = scanner.nextint();
+        int sisi = masukan.nextint();
     }
 }
