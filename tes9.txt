@@ -1,1 +1,0 @@
-+------id_buku-------+-----judul_buku-----+------penulis-------+----tahun_terbit----+------penerbit------+--------BK01--------+---Perahu Kertas----+----Dewa Lestari----

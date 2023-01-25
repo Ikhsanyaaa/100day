@@ -1,5 +1,0 @@
-===struk setoran===
-        nama : ikhsan
-        jumlah setoran : Rp.200000
-        jumlah saldo saat ini : Rp.200000
-        ===terimakasih===
