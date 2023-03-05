@@ -6,7 +6,7 @@ class Semen {
         int harga = 60000;
         int potongan;
         int total;
-        if (jumlah > 100){
+        if (jumlah >= 100){
             potongan = (harga * jumlah) * 2/100;
             total = harga * jumlah - potongan;
             System.out.println("total pembayaran = "+total);}
